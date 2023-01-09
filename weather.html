@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+        * {box-sizing: border-box;}
+        header {
+			padding: 5px;
+            font-size: 24px;
+			background-color:rgb(111, 170, 53);
+            color:black
+        }
+		body {
+			padding: 10px;
+            font-size: 24px;
+			background-color:rgb(111, 170, 53);
+            color:black;
+		}
+        /* Create two unequal columns that floats next to each other */
+        .column {
+        float: left;
+        padding: 10px; /* Should be removed. Only for demonstration */
+        }
+
+        .left {
+        width: 25%;
+        }
+
+        .right {
+        width: 75%;
+        margin:50px auto;
+        text-align: right;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* The navbar container */
+        .topnav {
+        overflow: hidden;
+        background-color: rgb(31, 88, 13);
+        }
+
+        /* Navbar links */
+        .topnav a {
+        float: left;
+        display: block;
+        color: rgb(111, 170, 53);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        /* Links - change color on hover */
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        .content {
+            padding: 10px;
+            margin:auto;
+            font-size:20px;
+        }
+	</style>
+<meta charset="UTF-8">
+<title>townsite.farm</title>
+</head>
+
+<body>
+	<header>
+        <div class="row">
+            <div class="column left" width="25%">
+                <a href="https://townsite.farm">
+                    <img src="images/logo.png" width="200px">
+                </a>
+            </div>
+            <div class="column right">
+                Townsite Urban Farm is a 501(c)(3) based in downtown Flagstaff, Arizona, USA focused on building educational opportunities around resiliency and food security in the face of a changing climate.
+            </div>
+        </div>
+    </header>
+
+  	<div class="topnav">
+        <a href='./index.html'>Home</a>
+        <a href='./weather.html'>Current weather</a>
+        <a href='./index.html'>Request growing space (coming Spring 2023!)</a>
+	</div>
+
+    <div class="content">
+        <p>
+            Townsite Urban Farm partners with the <a href="https://four-corners-scientific-computing.org">Four Corners Science and Computing Club</a> at Northern Arizona University to collect weather data from our site. The most recent two weeks of data can be viewed here:
+        </p>
+        <p>
+            <iframe src="https://iot.app.initialstate.com/embed/#/tiles/bkt_h0i9l4mxsnqb" width="750px" height="1000px"></iframe>
+        </p>
+        <p>
+            The full data dashboard can be accessed on <a href="https://go.init.st/xwi3scd">Initial State</a>.
+        </p>
+        <p>
+            The TUF site, indicating where sensors are located:<br>
+            <img src="./images/weather-station-images/tuf-site.png" alt="TUF site">
+        </p>
+	</div>
+</body>
+</html>
